@@ -1,0 +1,22 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <!-- <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header> -->
+    <div class="entry-content">
+        {{ .FirstParagraph | markdownify }}
+        <!-- TODO: include photo here -->
+    </div>
+    <div class="entry-content">
+        {{ .SecondParagraph | markdownify }}
+        <!-- TODO: include photo here -->
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" site.Params.socialIcons }}
+    </footer>
+    <div class="entry-content">
+        <img src="{{ .Photo }}" /> <!-- TODO: include photo here -->
+    </div>
+</article>
+<h2 class="latest-main">Latest posts</h2>
+{{- end -}}

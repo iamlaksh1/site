@@ -1,0 +1,45 @@
+baseURL: "https://iamlaksh1.github.io/blog/"
+languageCode: en-us
+title: Lakshmanan Venkatesan
+theme: PaperMod
+
+
+permalinks:
+  posts: "/:slug"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowCodeCopyButtons: true
+
+  homeInfoParams:
+    FirstParagraph: >
+      Lakshmanan is a software Engineer, currently working for Agriculture corporation. He is  specialized in geographic information systems, spatial data science, and open source software development.
+    SecondParagraph: >
+      Kavitha is Data Engineer, specialized in data engineering, data science, and open source software development. She is currently working for a leading Oil and Gas company.
+    Title: Lakshmanan & Kavitha
+    Photo: posts/images/lv_homepage.png
+
+  socialIcons:
+    - name: email
+      url: "mailto:laksh.gisprog@gmail.com"
+    - name: github
+      url: "https://github.com/iamlaksh1"
+    - name: twitter
+      url: "https://twitter.com/iamlaksh1"
+ 
+
+menu:
+  main:
+    - name: Posts
+      pageRef: /posts/
+      weight: 2  
+    - identifier: GitHub
+      name: GitHub
+      url: "https://github.com/martinfleis"
+      weight: 5
