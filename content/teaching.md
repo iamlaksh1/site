@@ -23,6 +23,6 @@ Students enrolled in `MZ340V17` can book a slot to discuss the assignment via [c
 
 Students are invited to work on bachelor's or master's theses on topics linked to the research areas of the ongoing projects and on the general scope of the work within the team. Note that with some exceptions of urban morphology, primarily quantitative methods are expected to be used.
 
-See the [list of proposed topics]({{< ref "/theses" >}}).
+
 
 ## Past workshops
