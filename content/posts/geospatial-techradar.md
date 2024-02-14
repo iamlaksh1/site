@@ -17,8 +17,10 @@ This was widely recieved with in gis community and many conversations/discussion
 
 I loved their categorization to 4 broad themes : Tools, Data, Techniques and Standards.  This is much suited for geospatial industry. 
 
-Here is my view/take on some  of key tools/standards which I use/used 
+![](../images/radar.png)
 
+
+Here is my view/take on some  of key tools/standards which I use/used 
 
 | Product |  Description | Remark
 | --- | --- | --- | 
