@@ -18,4 +18,4 @@ Currently he is working as **Tech Lead in geospatial** in one of leading Agricul
 [@iamlaksh1](https://twitter.com/iamlaksh1)
 <br>
 <br>
-[Photo](../posts/images/lv.png))
+[Photo](../posts/images/lv.png)
