@@ -8,6 +8,8 @@ tags:
   - "technology"
   - "teaching"
   - "products"
+  - "tools"
+  - "standards"
 ---
 
 Recently came across the [geospatial tech radar](https://www.element84.com/geospatial/announcing-our-2023-geospatial-tech-radar) article published by Element84.
@@ -15,7 +17,7 @@ This was widely recieved with in gis community and many conversations/discussion
 
 I loved their categorization to 4 broad themes : Tools, Data, Techniques and Standards.  This is much suited for geospatial industry. 
 
-Here is my view/take on each of key tools/standards 
+Here is my view/take on some  of key tools/standards which I use/used 
 
 
 | Product |  Description | Remark
