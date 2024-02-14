@@ -20,8 +20,8 @@ Here is my view/take on each of key tools/standards
 
 | Product |  Description | Remark
 | --- | --- | --- | --- |
-| GeoPandas |  Working with geospatial data in python is easy | Primarily used for Data science. Capabilities of Pandas and Shapely
-| MapLibre JS | Library for front-end web maps using WebGL | Open-source TypeScript library for publishing maps on web & mobile
+| GeoPandas |  Working with geospatial data in python is easy | The ecosystem of packages for spatial data handling and analysis in Python is extensive and covers both vector and raster analytics from small to large distributed data. 
+| MapLibre GL JS | Library for front-end web maps using WebGL | Open-source TypeScript library for publishing maps on web & mobile
 | OpenDrone Map | Open source drone Mapping s/w | ODM CLI, Web based ODM and Light weight API and CLI for processing imagery in cloud. Gaining huge momentum across the industries. **Watch out!**
 | PostGIS | Geospatial extension for PostgreSQL | Extends Postgres to use geospatial capablities. Widely adopted in modern geo-spatial development. 
 | Raster Vision | Open source ML library and framework for deep learning geospatial imagery | Python based library  used in CV models  with built-in support for chip classfication, object detection and semantic segmentation using Pytorch
