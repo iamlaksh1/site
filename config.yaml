@@ -1,6 +1,6 @@
 baseURL: "https://iamlaksh1.github.io/site/"
 languageCode: en-us
-title: Lakshmanan Venkatesan
+title: Lakshmanan 
 theme: PaperMod
 
 
@@ -19,10 +19,11 @@ params:
 
   homeInfoParams:
     FirstParagraph: >
-      Lakshmanan is a software Engineer, currently working for Agriculture corporation. He is  specialized in geographic information systems, spatial data science, and open source software development.
+      Welecome to my personal blog.       
+      I am Lakshmanan, a Software Engineer, specialized in **GIS**, data science, and open source software development. This blog is a collection of my thoughts, ideas, and experiences. 
     SecondParagraph: >
-      Kavitha is Data Engineer, specialized in data engineering, data science, and open source software development. She is currently working for a leading Oil and Gas company.
-    Title: Lakshmanan & Kavitha
+    
+    Title: Lakshmanan 
     Photo: posts/images/lv_homepage.png
 
   socialIcons:
@@ -41,5 +42,5 @@ menu:
       weight: 2  
     - identifier: GitHub
       name: GitHub
-      url: "https://github.com/martinfleis"
+      url: "https://github.com/iamlaksh1"
       weight: 5
