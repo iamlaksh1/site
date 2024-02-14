@@ -21,7 +21,7 @@ Here is my view/take on some  of key tools/standards which I use/used
 
 
 | Product |  Description | Remark
-| --- | --- | --- | --- |
+| --- | --- | --- | 
 | GeoPandas |  Working with geospatial data in python is easy | The ecosystem of packages for spatial data handling and analysis in Python is extensive and covers both vector and raster analytics from small to large distributed data. 
 | MapLibre GL JS | Library for front-end web maps using WebGL | Open-source TypeScript library for publishing maps on web & mobile
 | OpenDrone Map | Open source drone Mapping s/w | ODM CLI, Web based ODM and Light weight API and CLI for processing imagery in cloud. Gaining huge momentum across the industries. **Watch out!**
@@ -32,4 +32,4 @@ Here is my view/take on some  of key tools/standards which I use/used
 | SpatioTemporal Asset Catalogs (STAC) | Common language to describe geospatial information, so it can more easily be worked with, indexed, and discovered.  | Widely accepted across industries to store/retrive spatial data. Vast ecosystem with tools and resources made them  
 | FME | The most powerful integeration tool .  | Widely accepted across industries to data integeration and transformation. FME Desktop and Server is swiss army knife for geospatial workflows. 
 
-** There were more oss tools and libraries used along with products/data offerings industry gaints - Esri, Mapbox, HERE, CartoDB, Descartes... etc 
+** There were more oss tools and libraries used along with products/data offerings from industry gaints - Esri, Mapbox, HERE, CartoDB, Descartes... etc 
