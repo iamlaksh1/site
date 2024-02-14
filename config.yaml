@@ -24,7 +24,7 @@ params:
     SecondParagraph: >
     
     Title: Lakshmanan 
-    Photo: content/images/lv_homepage.png
+    Photo: posts/images/lv.png
 
   socialIcons:
     - name: email
