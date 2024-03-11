@@ -66,7 +66,7 @@ Please read the [important instructions](https://docs.linuxfoundation.org/tc-doc
 1. `LivenessProbe` will be automatically restart the container if it fails.
 1. Note down abbrevations : RWO, ROX, RWX, RWOP -- X stands for Many ; ReadWriteOncePod (RWOP)
 1. To be update labels of pod in bulk with condition `kubectl label pod -l "app in(v1,v2)" tier=web` 
-1. Underrstanding `ingress` and `egress` rules , path, ports (exclusion and inclusion of certain path is important)
+1. Understanding `ingress` and `egress` rules , path, ports (exclusion and inclusion of certain path is important)
 1. Pratice to create mult-pod container using imperative command (with little bit of editing) saves some time.
 1. If question says, `root of mounted volume` means - find the root path ; if volume-name is `web-content` then use mount path may be `/tmp/web-content` 
 1. use `nodeSelector` to run the pod on dedicated node (here - controlplane) ex: 
@@ -82,7 +82,7 @@ Please read the [important instructions](https://docs.linuxfoundation.org/tc-doc
 1. API depreciation, how to upgrade the existing object from older depreciated version to new 
 1. The Metrics Sever's frequency of metrics collections is not fast enough for accurate resource usage metrics
 1. The securityContext.runAsUser field can be used to set the user ID for the container's process, not to grant access to network storage devices. Capablities can be added at container level. 
-1. Pratice how to take a back of ETCD database (needs etcd-client) and certificates
+1. Pratice how to take a back up of ETCD database (needs etcd-client) and certificates
 1. Learn about docker fundamentals, how to create a image and container and push to registry and export the image as tar and save etc
 1. There are 4 volumes types :  emptyDir, hostPath, configMap, secret, Nfs , cloud provider solution
 1. Once a Secret or `ConfigMap` is marked as immutable, it is not possible to revert this change nor to mutate the contents of the data field. You can only delete and recreate the Secret. Existing Pods maintain a mount point to the deleted Secret - it is recommended to recreate these pods.
