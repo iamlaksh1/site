@@ -23,7 +23,7 @@ tags:
      - configMap , Secrets: Provides a way to inject configuration data.
      - nfs: An existing NFS (Network File System) share. Preserves data after Pod restart.
      - persistentVolumeClaim : Claims a Persistent Volume. 
-     - 
+     
 4. Create a multi-container (easy way )
    
      ```shell script
@@ -32,11 +32,11 @@ tags:
     ```
     
     vi multipod.yaml
-    –> Podname: multipod (containers; alpha & beta)
-    –> update first container name:line 11 –> name: alpha
-    –> delete below 13-lines (from line-12 onwards)
-    —> you are good now to apply the yaml file.
-    –> kubectl describe po multipod
+    - Podname: multipod (containers; alpha & beta)
+    - update first container name:line 11 –> name: alpha
+    - delete below 13-lines (from line-12 onwards)
+    - you are good now to apply the yaml file.
+    - kubectl describe po multipod
 
 5. Debug the distroless container 
     
@@ -117,7 +117,8 @@ tags:
 ```
 
 11.  The mapping between the Deployment and the replicas it controls happens through label selection.For label selection to work properly, the assignment of ***spec.selector.matchLabels*** and ***spec.template.metadata*** needs to match
-12. Health Check Attributes
+
+12. **Health Check Attributes**
 
 | Attributes | Default Value  | Description
   | --- | --- |  --- |   
@@ -128,10 +129,10 @@ tags:
 | failureThreshold                | 3 |  Number of failures for check attempts before probe is marked failed and takes action   
 | terminationGracePeriodSeconds   | 30 |  Grace period before forcing a container to stop upon failure. 
 
-12. Network policy : Network policies can be aggregated. A default deny rule may disallow ingress and/or egress traffic. An additional network policy can open up those rules with a more fine-grained definition.
+12. Network policies can be aggregated. A default deny rule may disallow ingress and/or egress traffic. An additional network policy can open up those rules with a more fine-grained definition.
 
 
-13. Service Port Mapping 
+13. **Service Port Mapping**
  ![ Service port mapping](../images/ports.png)
 
 14. 
