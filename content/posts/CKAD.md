@@ -134,7 +134,8 @@ export do='--dry-run=client -o yaml'
 |Create secrete with 2 sets of key value pairs | `kubectl create secret generic my-secret --from-literal=key1=supersecret --from-literal=key2=topsecret`
 | echo to base64 format | `echo -n "value" \| base64 `
 | echo to decode base64 format | `echo -n "value" \| base64 --decode `
-                            
+| Pod with service creation | `kubectl run echoserver --image=nginx --restart=Never --port=8080 --expose `
+| Pod with service creation | `kubectl create deployment echoserver --image=nginx --replicas=5` `kubectl expose deployment echoserver --port=80 --target-port=8080`                           
                      
 
 
