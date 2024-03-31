@@ -30,7 +30,7 @@ Please read the [important instructions](https://docs.linuxfoundation.org/tc-doc
 
 6. **DO NOT PANIC** in case of techincal issue or system issue, PSI online system has certain gotchas, proctor chat will help you or you can write to linux foundation and get this sorted out. Dont think too much. 
 
-7. Pratice the mock /simulator exams in device you are planning to take. If you are habituated to use big dual screens for study and pre, during exam if you use 14'' laptop (*dual screens not permitted*); your mind needs some realignment on fonts/size. So please be prepared.
+7. Pratice the mock /simulator exams in device you are planning to take. If you are habituated to use big dual screens for study and prep, during exam if you use 14'' laptop (*dual screens not permitted*); your mind needs some realignment on fonts/size. So please be prepared.
 
 8. Please charge your device to 100% and keep charger connected. 
 
@@ -84,7 +84,7 @@ Please read the [important instructions](https://docs.linuxfoundation.org/tc-doc
 1. The securityContext.runAsUser field can be used to set the user ID for the container's process, not to grant access to network storage devices. Capablities can be added at container level. 
 1. Pratice how to take a back up of ETCD database (needs etcd-client) and certificates
 1. Learn about docker fundamentals, how to create a image and container and push to registry and export the image as tar and save etc
-1. There are 4 volumes types :  emptyDir, hostPath, configMap, secret, Nfs , cloud provider solution
+1. There are 5 volumes types :  emptyDir, hostPath, configMap, secret, Nfs , cloud provider solution
 1. Once a Secret or `ConfigMap` is marked as immutable, it is not possible to revert this change nor to mutate the contents of the data field. You can only delete and recreate the Secret. Existing Pods maintain a mount point to the deleted Secret - it is recommended to recreate these pods.
 1. Unlike virtual machines containers are not completely isolated
 from their host. Containers and the hosts share the same kernel. Containers are
@@ -135,7 +135,7 @@ export do='--dry-run=client -o yaml'
 | echo to base64 format | `echo -n "value" \| base64 `
 | echo to decode base64 format | `echo -n "value" \| base64 --decode `
 | Pod with service creation | `kubectl run echoserver --image=nginx --restart=Never --port=8080 --expose `
-| Pod with service creation | `kubectl create deployment echoserver --image=nginx --replicas=5` `kubectl expose deployment echoserver --port=80 --target-port=8080`                           
+| Deployment with service creation | `kubectl create deployment echoserver --image=nginx --replicas=5` `kubectl expose deployment echoserver --port=80 --target-port=8080`                           
                      
 
 
