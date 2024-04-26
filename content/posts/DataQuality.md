@@ -9,8 +9,7 @@ tags:
   - "load csv"
   - "data ingestion"
   - "aws"
-  - "s3"
-  - "csv empty column"
+  - "s3" 
 ---
 
 I have been working on automated data ingestion activity on snowflake.  The python code uses Snowflake INFER_SCHEMA with Evolution Changes to load the data. [data-load with schema evolution](https://docs.snowflake.com/en/user-guide/data-load-schema-evolution#examples)
