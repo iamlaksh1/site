@@ -14,7 +14,8 @@ tags:
 
 This post walks you through the process of creating an API with geospatial capabilities using FastAPI and Pixi.
 
-Many data science and machine learning projects today use Conda for environment management and Poetry for package management. While this combination works well, it presents additional challenges when used with Dockerfiles (e.g., activating the Conda environment inside the container).
+Many data science and machine learning projects today use Conda for environment management and Poetry for package management. Using Poetry and Conda together in Python projects creates challenges due to their conflicting approaches to environment management and dependency resolution, often leading to inconsistencies in package versions and sources. The combination increases complexity in CI/CD pipelines and Dockerfiles, making it difficult to maintain consistent environments across different stages of development and deployment. 
+
 
 ## What is Pixi?
 
@@ -28,7 +29,7 @@ Many data science and machine learning projects today use Conda for environment 
 
 ## Project Goal
 
-The aim of this demo project is to replicate one of the main features of [CroplandCROS](https://croplandcros.scinet.usda.gov/), specifically the **calculation of area statistics** for an input shape for the year 2022, and return the computed data in JSON format.
+The aim of this project is to replicate one of the main features of [CroplandCROS](https://croplandcros.scinet.usda.gov/), specifically the **calculation of area statistics** for an input shape for the year 2022, and return the computed data in JSON format.
 
 ## Getting Started
 
@@ -36,12 +37,12 @@ This project was initiated using an existing **[python-cookiecutter-template](ht
 
 ### Development Environment Setup
 
-This project was developed on a Windows laptop. Here are the steps to set up your environment:
+Here are the steps to set up your environment:
 
 1. Install Pixi using `PowerShell` in **admin** mode:
    ```powershell
    iwr -useb https://pixi.sh/install.ps1 | iex
-2. Clone the cookie-cutter template using Cruft and answer all prompts:
+2. Clone the `cookie-cutter template` using `Cruft` and answer all prompts:
 
     ![prompts](../images/cruft%20prompts.png)
 
@@ -62,7 +63,7 @@ This will create a new pyproject.toml file.
     ```
 
      ![adding-dependencies](../images/add%20dependencies.png)
-8. We need FastAPI >=0.110.0,<0.111 to avoid a Swagger UI bug in the latest 0.112 version. The pyproject.toml should be updated like this:
+8. We need FastAPI >=0.110.0,<0.111 to avoid a Swagger UI bug in the latest version. The pyproject.toml should be updated like this:
 
     ![pyproject-toml](../images/pyproject-toml-new.png)
 9. Finally, run:
@@ -77,15 +78,15 @@ This will create a new pyproject.toml file.
 
 11. Ensure VS Code selects the correct interpreter. Check the bottom right-hand side. You should see "default : pixi":
 
-   ![vscode-python](../images/vscode-chose-pixi.png)
+    ![vscode-python](../images/vscode-chose-pixi.png)
 
 12. The project structure should now look like this:
 
-![project-structure](../images/project-structure.png)
+    ![project-structure](../images/project-structure.png)
 
-13. Read the configuration section from the Pixi documentation to understand other parameters such as platform and platform-based dependencies.
+13. Read the [configuration section](https://pixi.sh/latest/features/multi_platform_configuration/) from the Pixi documentation to understand other parameters such as platform and platform-based dependencies.
 
-14. Pixi comes with the ability to define different system requirements for each environment (dev/test/prod). You can read about customizations here.
+14. Pixi comes with the ability to define different system requirements for each environment (dev/test/prod). You can read about customizations [here](https://pixi.sh/latest/features/multi_environment/#feature-environment-set-definitions).
 
 15. To run or debug a simple app in VS Code, click "Run and Debug" or press F5, and VS Code will run the active file. For more detailed debugging, create a launch configuration file to save your settings. This information is stored in a launch.json file in the .vscode folder of your workspace or in your user settings:
     
@@ -123,18 +124,16 @@ The function reads the crop code JSON file to get a list of crop codes. The outp
 
 22. I tested for a small area in Sunnyside, Washington state. Created a GeoJSON using [geojson.io](https://geojson.io/#map=2/0/20). The `location.geojson` is saved in the project in case you need it.
 
-![test-location](../images/sunnyside-washinton.png)
-
     ![test-location](../images/sunnyside-washinton.png)
     
-23. `compute-cropland` processed the input GeoJSON file and returns calculated area statistics as a dictionary in the format `crop-name: area (acres):`
+23. `compute-cropland` process the input GeoJSON file and returns calculated area statistics as a dictionary in the format `crop-name: area (acres):`
 
-24. To validate, the same geometry has been used in the CroplandCROS website [click here](https://croplandcros.scinet.usda.gov/):
+24. To validate, the same geometry has been used in the CroplandCROS website [click here](https://croplandcros.scinet.usda.gov/) and follow the below steps:
 
-- Select a Cropland Data Layer in "Select layer" to ensure we use Cropland as our input.
-- Under "Define area", select "Import shapefile" (convert GeoJSON to shapefile using geojson.io) because the CroplandCROS site accepts shapefiles. The shape should be the same as our `location.geojson` for comparison.
-- Select year 2022 in the bottom "Select CDL year" panel, since our input TIFF is only for the year 2022 in this demo.
-- Finally, on the analysis button, click "Calculate area statistics". This will take a few minutes to compute the cropland statistics for the given input. The table will be displayed. Sort them by crop name.
+- Select a Cropland Data Layer in `Select layer` to ensure we use Cropland as our input.
+- Under `Define area`, select `Import shapefile` (convert GeoJSON to shapefile using geojson.io) because the CroplandCROS site accepts shapefiles. The shape should be the same as our `location.geojson` for comparison.
+- Select `year`2022 in the bottom `Select CDL year` panel, since our input TIFF is only for the year 2022 in this demo.
+- Finally, on the `analysis` button, click `Calculate area statistics`. This will take a few minutes to compute the cropland statistics for the given input. The table will be displayed. Sort them by crop name.
 
 
     ![geo-location](../images/croplandcros-sunnyside-2022.png)
@@ -154,6 +153,7 @@ This demo project can be further extended based on various use cases.
 
 The Pixi package manager is user-friendly and makes it easy to add/remove packages. The error messages are descriptive with possible solutions, making it easy for any developer to adopt.
 Pixi is loaded with useful features - environment segregation, activation, tasks, etc.
-Here's a good article on dockerizing PIXI in production.
+Here's a [good article](https://tech.quantco.com/blog/pixi-production) on dockerizing pixi in production.
 
 With available cookie-cutter templates and Cruft, we can easily create a package and deploy it. Integrating geospatial capabilities with the FastAPI framework makes it easy for front-end client applications.
+
