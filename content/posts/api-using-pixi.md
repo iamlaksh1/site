@@ -1,13 +1,13 @@
 ---
 title: "An API with Geospatial capabilities using Pixi"
-date: "2024-07-16" 
+date: "2024-08-06" 
 tags:
   - "gis"
   - "fastapi"
   - "pixi"
   - "python"
   - "croplandCROS"
-  - "conda"
+  - "gdal"
   - "package-manager"
   - "geospatial"
 ---
@@ -15,7 +15,7 @@ This post guides you through creating an API with geospatial capabilities using 
 
 Nowadays, many data science and machine learning projects use conda for environment management and poetry for package management. This combination works well but presents additional challenges when used with Dockerfiles (e.g., activating the conda environment inside the container). 
 
-Before we further deep-dive, lets see what is pixi?. How this helps in python projects.
+Before we further deep-dive, lets see what is pixi?. 
 
 **[Pixi](https://prefix.dev/)** is a new package manager built on the foundation of the conda and conda-forge ecosystem. Pixi has almost all features of poetry plus extra features.
 
@@ -26,7 +26,7 @@ Before we further deep-dive, lets see what is pixi?. How this helps in python pr
 5. Simplified Setup: With Pixi, setting up is easy: just run pixi run start to install dependencies and start your project.
 
 
-> The aim of this demo project is to replicate one of the main features of [CroplandCROS](https://croplandcros.scinet.usda.gov/), specifically the **calculation of area statistics** for a inout p shape for the year 2022, and return the computed data in JSON format.
+> The aim of this demo project is to replicate one of the main features of [CroplandCROS](https://croplandcros.scinet.usda.gov/), specifically the **calculation of area statistics** for a input  shape for the year 2022, and return the computed data in JSON format.
 
 I initiated this project using an existing **[python-cookiecutter-template](https://github.com/timothycrosley/cookiecutter-python/)**.
 
@@ -39,12 +39,12 @@ I have developed this project on my windows laptop. Here are steps
  2. Clone the [cookie-cutter template](https://github.com/timothycrosley/cookiecutter-python/) using [Cruft](https://github.com/cruft/cruft) and answer all prompts  (see below)
    
      ![prompts](../images/cruft%20prompts.png)
-3. Open the project in VS code. Project should be like this below
+3. Open the project in VS code. Project structure should be 
 
    ![project-default-template](../images/proj-structure-template.png)
   
 4. Delete the pyproject.toml which comes with template. We will create new one using pixi.
-5. Open VS code terminal. Run `pixi init --pyproject ` . This will create an new pyproject.toml
+5. Open VS code terminal in project root. Run `pixi init --pyproject ` . This will create an new pyproject.toml
 6. Update the project section. I am using python > 3.9 
 ![project-toml](../images/project-toml.png)
 
@@ -55,7 +55,7 @@ I have developed this project on my windows laptop. Here are steps
 
 8. We need to need fast API >=0.110.0,<0.111. This is escape a swagger UI bug in latest 0.112 version. Pyproject.toml gets updated like below.
 
-    ![pyproject-toml](../images/pyproject-toml.png)
+    ![pyproject-toml](../images/pyproject-toml-new.png)
 
 9. Finally run ` pixi install` . This will create an lock-file.
 
@@ -74,9 +74,9 @@ Ensure that VS code selects the correct interpertor. Check right hand side botto
 ![project-structure](../images/project-structure.png)
 
 10. Read the [configuration-section](https://pixi.sh/latest/features/multi_platform_configuration/) from pixi doc to understand other parameters.
-such as platform, platform based dependcies. Activation script.
+such as platform, platform based dependicies.
 
-11. We have rich features - different system requirements for each environment (dev/UAT/prod). etc. You can read about customizations [here](https://pixi.sh/latest/features/multi_environment/#feature-environment-set-definitions)
+11. Pixi comes with ability to define different system requirements for each environment (dev/UAT/prod). etc. You can read about customizations [here](https://pixi.sh/latest/features/multi_environment/#feature-environment-set-definitions)
 
 12. To run or debug a simple app in VS Code, click "Run and Debug" or press F5, and VS Code will run the active file.  For more detailed debugging, create a launch configuration file to save your settings. This information is stored in a launch.json file in the .vscode folder of your workspace or in your user settings
 
@@ -147,4 +147,4 @@ This is demo project can be further extended based on various use cases.
 3. Here is good article on dockerizing [PIXI in production]( https://tech.quantco.com/blog/pixi-production) 
 
 4. With available cookie cutter templates and cruft, we can able to easily create an package and deploy them. Integerating geospatial capabilities with FastAPI framework makes easy for front-end clients applications.
-
+  
