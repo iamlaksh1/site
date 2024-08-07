@@ -1,4 +1,3 @@
-# Creating a Geospatial API with FastAPI and Pixi
 ---
 title: "An API with Geospatial capabilities using Pixi"
 date: "2024-08-06" 
