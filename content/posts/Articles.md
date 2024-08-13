@@ -41,3 +41,6 @@ I'll share some of good technical articles and blogs which I across.
 
 - **[Mutable and Immutable in Javascript](https://blog.devgenius.io/mutable-and-immutable-in-javascript-78a3cbc6187c)** - Good basics on mutables and immutables
 
+
+- **[Understanding OAuth and Open ID connect](https://www.youtube.com/watch?v=996OiexHze0)** - Best you tube video about Identity & Access Management  OAUTH | OpenID Connect
+

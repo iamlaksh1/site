@@ -17,7 +17,7 @@ tags:
 
 In continuation of Cropland CROS API [link](https://iamlaksh1.github.io/site/an-api-with-geospatial-capabilities-using-pixi/). 
 
-The front-end application has been developed using React (w/ ts) using Material UI. **[Github Repo](https://github.com/iamlaksh1/cropland-ui)**
+The front-end application has been developed using React (w/ ts) and Material UI. **[Github Repo](https://github.com/iamlaksh1/cropland-ui)**
 
 
 <h3>Screenshots 📷</h3>
