@@ -12,7 +12,7 @@ tags:
   - "geospatial"
 ---
 
-I'll share some of good technical articles and blogs which I across.
+I'll share some of good technical articles and blogs which I came across.
 
 
 - **[Awesome Vector-tiles](https://github.com/mapbox/awesome-vector-tiles)** . List of parsers and generators, clients and geospatial tools. 
