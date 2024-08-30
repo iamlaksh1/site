@@ -44,3 +44,5 @@ I'll share some of good technical articles and blogs which I came across.
 
 - **[Understanding OAuth and Open ID connect](https://www.youtube.com/watch?v=996OiexHze0)** - Best you tube video about Identity & Access Management  OAUTH | OpenID Connect
 
+- **[Sentinel 2 - Applications](https://sentiwiki.copernicus.eu/web/s2-applications)** - Sentinel 2 Applications and Processing Levels.
+
