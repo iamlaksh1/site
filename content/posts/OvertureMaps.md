@@ -110,7 +110,7 @@ For the **selected study area** - I set an goal to find an answers to following 
 4. Identify residential houses within a specified area.
 5. Generate a list of residential houses with swimming pools, useful for pool service or grill companies.
 6. Assess the impact on nearby houses and buildings in case of man-made lakes or streams overflowing during flood season; relevant for home insurance companies.
-7. Identify establishments within a given point and buffer radius..
+7. Identify establishments within a given point and buffer radius.
 
 8. Find the shortest path to a specified destination.
 
