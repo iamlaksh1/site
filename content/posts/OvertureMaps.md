@@ -149,19 +149,19 @@ Here are the steps to set up your environment:
 
 7. Run `pixi shell` to activate the project in the terminal. You can view all environment variables using `pixi shell-hook`.
 
-18. If all the above steps worked, you can run and debug the code using F5. You should see the API like this in the browser:
+8. If all the above steps worked, you can run and debug the code using F5. You should see the API like this in the browser:
 
     ![API](../images/peccan-grove-api.png)
 
-20. The GET endpoint `find-places`should return list of places (*251 unique categories available for search*) matching:
+9. The GET endpoint `find-places`should return list of places (*251 unique categories available for search*) matching:
 
     ![Find-places](../images/peccan-grove-api-find-places.png)
 
-21. The GET end point `/building/extent-search` to find list of buildings for an given extent
+10. The GET end point `/building/extent-search` to find list of buildings for an given extent
 
      ![Find-Buildings](../images/peccan-grove-api-building-extent-search.png)
 
-22. Buildings Search and other classification results 
+11. Buildings Search and other classification results 
 
      ![Buildings-Result](../images/building-search-extent-result.png)
 
@@ -177,15 +177,15 @@ Here are the steps to set up your environment:
 
     ![Land Size in Acres Ranges](../images/landsize-in-acres.png)
 
-23. Database and spatial Queries 
+12. Database and spatial Queries 
 
     ![Database](../images/peccan-grove-database.png)
 
     ![Buildings Table](../images/buildings-table.png)
 
-24. Data loading: Since Fort Bend County uses EPSG 2278, I projected the data to the same coordinate system for easier comparison.
+13. Data loading: Since Fort Bend County uses EPSG 2278, I projected the data to the same coordinate system for easier comparison.
 
-`` shell python
+``` shell python
        
                     CREATE TABLE {table_name} AS
                     SELECT 
@@ -194,9 +194,9 @@ Here are the steps to set up your environment:
                         ST_GeomFromWKB(geometry) AS geomwgs84                  
                     FROM read_parquet('{file_path}');
                
-``
+```
 
-25. Some Spatial Queries
+14. Some Spatial Queries
 
 *Find an park from given point within 1 mile radius*
 
@@ -219,7 +219,7 @@ Here are the steps to set up your environment:
 
 *Classify the land values based on ranges*
 
-```shell SQL
+``` shell SQL
 
     SELECT
         CASE 
@@ -240,7 +240,7 @@ Here are the steps to set up your environment:
 
 *Swimming Pools with-in buffer distance of 20 ft*
 
-```shell SQL
+``` shell SQL
 
     SELECT  
         sp.*,
