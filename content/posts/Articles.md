@@ -50,6 +50,8 @@ I'll share some of good technical articles and blogs which I came across.
 
 -  **[Mastering GDAL](https://courses.spatialthoughts.com/gdal-tools.html)** - Best way to learn GDAL 
 
-- **[Introduction for ML for Earth Observation](https://eo-college.org/courses/introduction-to-machine-learning-for-earth-observation/) - Good course to understand ML for EO.
+- **[Introduction for ML for Earth Observation](https://eo-college.org/courses/introduction-to-machine-learning-for-earth-observation/)** - Good course to understand ML for EO.
 
 -  **[Vector Algebra basics](https://www.youtube.com/playlist?list=PLpFwQ55AG3tSzLIlGqcgtqc7EWxlTmHuj)** - Vector algebra basics (refresher course for ML) 
+
+- **(Modern DW for Location Data)(https://www.honeycombmaps.com/blog/modern-delivery-data-warehouse-location-data-tutorial)** - Good article on modern dataware house for location data. 
