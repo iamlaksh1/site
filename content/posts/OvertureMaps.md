@@ -268,7 +268,7 @@ Here are the steps to set up your environment:
 
 2. The columns were extracted and flattened, and a schema structure was provided for each theme.
 
-3. During data validation, I noticed several inaccuracies—particularly in the Overture building dataset, where many attributes were missing, especially for man-made structures like swimming pools in our neighborhood.
+3. During data validation, I noticed several inaccuracies—particularly in the Overture building dataset, where many attributes were missing, especially for man-made structures like swimming pools in our neighborhood. 
 
 4. Spatial queries in DuckDB differed somewhat from other databases 
 
