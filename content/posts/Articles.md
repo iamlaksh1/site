@@ -52,4 +52,4 @@ I'll share some of good technical articles and blogs which I came across.
 
 - **[Introduction for ML for Earth Observation](https://eo-college.org/courses/introduction-to-machine-learning-for-earth-observation/) - Good course to understand ML for EO.
 
--  **[Vector Algebra basics](https://www.youtube.com/playlist?list=PLpFwQ55AG3tSzLIlGqcgtqc7EWxlTmHuj)** - Vector algebra basics (refresher for ML)
+-  **[Vector Algebra basics](https://www.youtube.com/playlist?list=PLpFwQ55AG3tSzLIlGqcgtqc7EWxlTmHuj)** - Vector algebra basics (refresher course for ML) 
