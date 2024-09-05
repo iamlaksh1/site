@@ -46,3 +46,9 @@ I'll share some of good technical articles and blogs which I came across.
 
 - **[Sentinel 2 - Applications](https://sentiwiki.copernicus.eu/web/s2-applications)** - Sentinel 2 Applications and Processing Levels.
 
+- **[Python Foundation for Spatial Analysis](https://courses.spatialthoughts.com/python-foundation.html) - Python for GIS Developer - Beginner level course.
+
+-  **[Mastering GDAL](https://courses.spatialthoughts.com/gdal-tools.html) - Best way to learn GDAL 
+
+- **[Introduction for ML for Earth Observation](https://eo-college.org/courses/introduction-to-machine-learning-for-earth-observation/) - Good course to understand ML for EO.
+
