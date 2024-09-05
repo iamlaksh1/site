@@ -21,7 +21,7 @@ tags:
 - Self-supervised Learning: Tapping the Power of Unlabeled Data
 - From Text to Image and Back: Image Generation from Text and Change Captioning in -   Remote Sensing
 - Deep Learning for SAR
-- Machine Learning and Earth Observation for Sustainable Development Goals
+- Machine Learning and Earth Observation for Sustainable Development Goals.
 
 
   ![Introduction to Machine Learning for EO](../images/certificate.png)
