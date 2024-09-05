@@ -74,29 +74,29 @@ The aim of this project is to build an API using latest data (buildings, POI, ad
 
   `Our approach focuses on joining two geospatial polygons, we simply need to determine whether a building is contained within a parcel shape. However, there is a small catch to consider: buildings located on the boundaries of parcel should not be assigned to multiple parcels. To handle this, I used a straightforward method: finding the building's center point with the ST_Centroid function and then checking if this point falls within a parcel shape using the ST_Contains function.`
 
-    ``` shell sql
-
-        COPY(
-        SELECT 
-            buildings.id as gers, 
-            parcel.ownername AS owner,
-            parcel.quickrefid AS properyid,
-            parcel.oaddr1 AS address,
-            parcel.totalvalue AS totalvalue,
-            parcel.landvalue AS landvalue, 
-            parcel.yearbuilt AS yearbuilt,
-            parcel.landsizeac AS landsizeinacre,
-            parcel.totsqftlvg AS totalsqftliving,
-            parcel.ownerstate AS ownerstate,
-            parcel.impvalue AS improventvalue,
-            parcel.legal AS legaldescription,
-            parcel.taxunits AS tax,
-            parcel.nbhdcode AS neighbrhoodcode,
-            ST_GeomFromWKB(buildings.geometry) as building_geom 
-        FROM '/path/to/buildings.parquet' as buildings 
-        JOIN ST_Read('/path/to/PARCELS.shp') as parcel 
-            ON ST_Within(ST_Centroid(ST_GeomFromWKB(buildings.geometry)), parcel.geom)
-        ) TO '/path/to/output.csv';
+    ``` shell SQL
+        
+            COPY(
+            SELECT 
+                buildings.id as gers, 
+                parcel.ownername AS owner,
+                parcel.quickrefid AS properyid,
+                parcel.oaddr1 AS address,
+                parcel.totalvalue AS totalvalue,
+                parcel.landvalue AS landvalue, 
+                parcel.yearbuilt AS yearbuilt,
+                parcel.landsizeac AS landsizeinacre,
+                parcel.totsqftlvg AS totalsqftliving,
+                parcel.ownerstate AS ownerstate,
+                parcel.impvalue AS improventvalue,
+                parcel.legal AS legaldescription,
+                parcel.taxunits AS tax,
+                parcel.nbhdcode AS neighbrhoodcode,
+                ST_GeomFromWKB(buildings.geometry) as building_geom 
+            FROM '/path/to/buildings.parquet' as buildings 
+            JOIN ST_Read('/path/to/PARCELS.shp') as parcel 
+                ON ST_Within(ST_Centroid(ST_GeomFromWKB(buildings.geometry)), parcel.geom)
+            ) TO '/path/to/output.csv';
 
     ```
 
