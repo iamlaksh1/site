@@ -11,7 +11,9 @@ tags:
   - "Models"
   - "GIS"
 ---
-    This is an engaging course on Machine Learning for Earth Observation. This certification program covers the following seven topics, each with a well-designed quiz at the end.
+    
+    
+  ```This is an engaging course on Machine Learning for Earth Observation. This certification program covers the following seven topics, each with a well-designed quiz at the end.```
 
 - Artificial Intelligence and Data Science in Earth Observation
 - Identifying Ethical Issues and Opportunities in AI in Earth Observation Research
