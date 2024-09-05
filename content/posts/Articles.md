@@ -54,4 +54,6 @@ I'll share some of good technical articles and blogs which I came across.
 
 -  **[Vector Algebra basics](https://www.youtube.com/playlist?list=PLpFwQ55AG3tSzLIlGqcgtqc7EWxlTmHuj)** - Vector algebra basics (refresher course for ML) 
 
-- **(Modern DW for Location Data)(https://www.honeycombmaps.com/blog/modern-delivery-data-warehouse-location-data-tutorial)** - Good article on modern dataware house for location data. 
+- **[Modern DW for Location Data](https://www.honeycombmaps.com/blog/modern-delivery-data-warehouse-location-data-tutorial)** - Good article on modern dataware house for location data. 
+
+- **[Introduction to statistical learning using Python ](https://www.statlearning.com/)** - Awesome book w/ lot of examples in Python.
