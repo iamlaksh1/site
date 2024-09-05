@@ -56,4 +56,4 @@ I'll share some of good technical articles and blogs which I came across.
 
 - **[Modern DW for Location Data](https://www.honeycombmaps.com/blog/modern-delivery-data-warehouse-location-data-tutorial)** - Good article on modern dataware house for location data. 
 
-- **[Introduction to statistical learning using Python ](https://www.statlearning.com/)** - Awesome book w/ lot of examples in Python.
+- **[Introduction to statistical learning using Python ](https://www.statlearning.com/)** - Awesome book w/ lot of examples in Python. 
