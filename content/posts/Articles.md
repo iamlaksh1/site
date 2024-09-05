@@ -34,7 +34,7 @@ I'll share some of good technical articles and blogs which I came across.
 
 - **[FastAPI with Geospatial Integeration](https://blog.stackademic.com/integrating-geospatial-data-into-your-api-with-fastapi-ceb8a9dc0cd3)** - This is an good starting point for FastAPI with Geospatial.
 
-- **[CORS Playground](https://jakearchibald.com/2021/cors/playground/?prefillForm=1&requestMethod=GET&requestUseCORS=1&requestSendCredentials=&preflightStatus=204&preflightAllowOrigin=&preflightAllowCredentials=&preflightAllowMethods=&preflightAllowHeaders=&responseStatus=200&responseAllowOrigin=*&responseAllowCredentials=&responseExposeHeaders=)** - CORS playground to quickly test 
+- **[CORS Playground](https://jakearchibald.com/2021/cors/playground/?prefillForm=1&requestMethod=GET&requestUseCORS=1&requestSendCredentials=&preflightStatus=204&preflightAllowOrigin=&preflightAllowCredentials=&preflightAllowMethods=&preflightAllowHeaders=&responseStatus=200&responseAllowOrigin=*&responseAllowCredentials=&responseExposeHeaders=)** - CORS playground
 
 
 - **[Deep-Dive of JS Event Loop](https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=19s)** - Excellent video to understand JS event loop 
@@ -57,3 +57,5 @@ I'll share some of good technical articles and blogs which I came across.
 - **[Modern DW for Location Data](https://www.honeycombmaps.com/blog/modern-delivery-data-warehouse-location-data-tutorial)** - Good article on modern dataware house for location data. 
 
 - **[Introduction to statistical learning using Python ](https://www.statlearning.com/)** - Awesome book w/ lot of examples in Python. 
+
+- **[Dataset for EO](https://github.com/EarthNets/Dataset4EO)** - Github repo for curated datasets for EO
