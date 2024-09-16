@@ -13,8 +13,6 @@ tags:
   - "Remote Sensing"
 ---
 
-
-
 This is an introductory guide on using QGIS SCP (Semi-Automatic Classification/Supervised Classification) for classifying land cover using Landsat data.
 
 Before we dive in, let's start with some key basics.
