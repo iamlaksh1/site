@@ -23,10 +23,9 @@ Before we dive in, let's start with some key basics.
 
 **Informational Classes** : Categories of interest to users of the data (i.e Water, Urban, Agriculture, Forest etc)
 
-```
-Image classification is the process of GROUPING spectral classes and assgining them informational class names
 
-```
+*Image classification is the process of GROUPING spectral classes and assgining them informational class names*
+
 
 
 <h3>Land Cover Mapping Basics</h3>
@@ -37,12 +36,12 @@ radiation differently depending on the wavelength
 
 -  This pattern of relection is known as the object's *spectral signature* 
 
-- For ex,  $\textcolor{green}{\textsf{(Green)}}$ vegetation absorbs  $\textcolor{red}{\textsf{(Red)}}$ light but reflects near-infrared (NIR) wavelengths.
+- For ex,  <span style="color:green;">(Green)</span> vegetation absorbs  <span style="color:red;">(Red)</span> light but reflects near-infrared (NIR) wavelengths.
 
 
 ![Landsat Bands vs % reflectance](../images/reflectance-bands.png)
 
-Analyze spectral signatures by plotting the reflectance values of Band 3   $\textcolor{red}{\textsf{(Red)}}$  against Band 4 (NIR).
+Analyze spectral signatures by plotting the reflectance values of Band 3  <span style="color:red;">(Red)</span>  against Band 4 (NIR).
 
 - Different objects, like soil, water, and vegetation, will appear in distinct areas on the plot.
 - The software (QGIS and Others) uses this information to differentiate between various land cover types.
@@ -51,12 +50,10 @@ Analyze spectral signatures by plotting the reflectance values of Band 3   $\tex
 
 <h3>Image Classification</h3>
 
-
-```
 Digital image classification is a way to group similar pixels in an image into different land cover types, like water, forests, or cities. There are three main methods: unsupervised, supervised, and object-based. 
 
 In supervised classification, the user selects sample areas for each type of land cover, called "training sites." The software then uses these samples to figure out what the rest of the image shows.  The classification process relies on the spectral signature defined by the training set, with the software assigning classes based on their closest match to the training data.
-```
+
 
 - Approaches :  Pixel-Based Vs Objects-Based
 - Methods    :  Supervised Vs Unsupervised 
@@ -133,7 +130,6 @@ Bare Ground | 3| Burned | 4
 Bare Ground |3| Forest Harvest | 5
 Bare Ground | 3| Other | 6
 
-
 <h4> Step 6 : Training </h4>
 
 
@@ -141,7 +137,11 @@ Bare Ground | 3| Other | 6
 
 ![Algorithm](../images/algorithm.png)
 
-<h4> Step 7 : Output </h4>
+![Water lake ROI](../images/water-roi.png)
+
+![Vegetation Burned](../images/burned-roi.png)
+
+<h4> Step 7 :  Output : Classification </h4>
 
 ![Output](../images/output-classification.png)
 
