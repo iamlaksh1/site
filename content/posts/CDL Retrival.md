@@ -12,7 +12,8 @@ tags:
   - "geospatial"
 ---
 
-<h3>Cropland Data Layer (CDL) file for a specific bounding box and year</h3>
+<h3>Extract Cropland Data Layer (CDL) file for a specific bounding box and year</h3>
+
 <h4>This python code queries NAAS Geodata API for given bounding box and year and retrives Cropland image in TIF format</h4>
 
 ```
@@ -25,7 +26,7 @@ Get CDL file using following ways
 ```
 
 
-[Click here is the API examples](https://nassgeodata.gmu.edu/CropScape/devhelp/help.html)
+[Click here for the API examples](https://nassgeodata.gmu.edu/CropScape/devhelp/help.html)
 
 
 *We can get crop land  statistics , CDL stats comparison for 2 years (in json,CSV formats), extract cropland values using crop categories and generate PDF*
