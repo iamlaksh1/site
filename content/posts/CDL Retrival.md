@@ -1,5 +1,5 @@
 ---
-title: "Cropland Data Layer (CDL) file for a specific bounding box and year"
+title: "Cropland Data Extraction using Python"
 date: "2024-09-20" 
 tags:
   - "gis"
@@ -12,7 +12,7 @@ tags:
   - "geospatial"
 ---
 
-<h3>Cropland Data Extraction using Python</h3>
+<h3>Cropland Data Layer (CDL) file for a specific bounding box and year</h3>
 <h4>This python code queries NAAS Geodata API for given bounding box and Year and retrives Cropland image as TIF</h4>
 
 
