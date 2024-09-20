@@ -11,7 +11,9 @@ tags:
   - "Remotesensing"
   - "geospatial"
 ---
-<h3>This python code queries NAAS Geodata API for given bounding box and Year and retrives Cropland image as TIF</h3>
+
+<h3>Cropland Data Extraction using Python</h3>
+<h4>This python code queries NAAS Geodata API for given bounding box and Year and retrives Cropland image as TIF</h4>
 
 
 
@@ -29,7 +31,6 @@ Get CDL file using following ways
 
 
 ```python
-
 import requests
 
 def CDL_clip_retrieve(bbox="130783,2203171,153923,2217961", year=2018):
@@ -82,6 +83,10 @@ if __name__ == "__main__":
         print(f"CDL data for year {year} has been saved as 'cdl_data_{year}.tif'")
     else:
         print("Failed to retrieve CDL data")
-
-
 ```
+
+             
+![Result](../images/cdl_data_2018.png)
+  
+
+
