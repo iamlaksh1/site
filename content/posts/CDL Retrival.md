@@ -6,18 +6,14 @@ tags:
   - "cropland"
   - "python"
   - "CDL"
-  - "NASS Geodata"
-  - "API"
+  - "NASS Geodata API"
+  - "Data Extraction"
   - "Remotesensing"
   - "geospatial"
 ---
 
 <h3>Cropland Data Layer (CDL) file for a specific bounding box and year</h3>
-<h4>This python code queries NAAS Geodata API for given bounding box and Year and retrives Cropland image as TIF</h4>
-
-
-
-[Here is the example] (https://nassgeodata.gmu.edu/CropScape/devhelp/help.html)
+<h4>This python code queries NAAS Geodata API for given bounding box and year and retrives Cropland image in TIF format</h4>
 
 ```
 Get CDL file using following ways 
@@ -27,7 +23,12 @@ Get CDL file using following ways
 4. By Year and upload vector files (shp file in zip format)
 
 ```
-*We can get CDL statistics , CDL stat comparison for 2 years (in json,CSV), extract CDL values using crop categories and creating PDF*
+
+
+[Click here is the API examples](https://nassgeodata.gmu.edu/CropScape/devhelp/help.html)
+
+
+*We can get crop land  statistics , CDL stats comparison for 2 years (in json,CSV formats), extract cropland values using crop categories and generate PDF*
 
 
 ```python
