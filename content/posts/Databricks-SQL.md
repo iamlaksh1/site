@@ -1,6 +1,6 @@
 ---
 title: "Access a Table from Azure Databricks using Javascript "
-date: "2024-11-07" 
+date: "2024-11-06" 
 tags:
   - "gis"
   - "Node JS"
