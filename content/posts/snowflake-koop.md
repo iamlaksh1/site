@@ -12,7 +12,7 @@ tags:
   - "Esri"
 ---
 
-<h3>In this article, I will walk you through the process of ingesting geospatial data from the Overture Maps Foundation into Snowflake, using a step-by-step approach. Additionally, we will leverage the Snowflake-Koop provider to access and serve the ingested data as a GeoService. </h3>
+```In this article, I will walk you through the process of ingesting geospatial data from the Overture Maps Foundation into Snowflake, using a step-by-step approach. Additionally, we will leverage the Snowflake-Koop provider to access and serve the ingested data as a GeoService. ```
 
 <h4>What is Koop.js ?</h4>
 
