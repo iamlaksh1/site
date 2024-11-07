@@ -1,5 +1,5 @@
 ---
-title: "Streamlining GIS Data: Ingesting Overture Maps into Snowflake using Snowflake-Koop-Provider "
+title: "End-to-End Guide: Ingesting Overture Maps Data into Snowflake and Serving It as a GeoService with Snowflake-Koop Provider"
 date: "2024-11-07" 
 tags:
   - "gis"
@@ -12,7 +12,7 @@ tags:
   - "Esri"
 ---
 
-<h3>This article shows how to use snowflake-koop-provider to snowflake warehouse and consume Overture Map Data as geoservice </h3>
+<h3>In this article, I will walk you through the process of ingesting geospatial data from the Overture Maps Foundation into Snowflake, using a step-by-step approach. Additionally, we will leverage the Snowflake-Koop provider to access and serve the ingested data as a GeoService. </h3>
 
 <h4>What is Koop.js ?</h4>
 
@@ -288,9 +288,11 @@ Here is existing github repo for Koop provider for [snowflake](https://github.co
 
     lib\snowflake-client.js : Line 64 to include double quotes
 
-    `filterSql = filterSql + `order by "${primaryId}"  `;`
+    `filterSql = filterSql + order by "${primaryId}"  ;`
 
+   
     Update Connect method to include application name, db,schema, role, authenticator.
+    
     ```
     async function connect(snowflakeAccount,snowflakeWarehouse,snowflakeUser,snowflakePassword){
     let promise = new Promise((resolve,reject)=>{
@@ -313,7 +315,7 @@ Here is existing github repo for Koop provider for [snowflake](https://github.co
 
     ` idField:'id',`  # use lower case id
 
-    `  "select": sd[idx].fields.map((item) => { return `"${item.name}"` }).join(','),`  # include double quote in field names
+    `  "select": sd[idx].fields.map((item) => { return `"${item.name}"` }).join(','),`  # include quotes
 
 5. Run `node server.js` 
 
@@ -327,5 +329,8 @@ Here is existing github repo for Koop provider for [snowflake](https://github.co
 
 <h3>References</h3>
 
-1. [Koop](https://koopjs.github.io/)
+1. [Koop Documentation](https://koopjs.github.io/)
 2. [Koop provider for snowflake](https://github.com/Esri/koop-provider-snowflake)
+3. [Big Query Koop Provider ](https://github.com/geobabbler/koop-bigquery-provider)
+4. [DHIS API Koop provider ](https://github.com/Esri/dhis2-koop-connector)
+5. [PostGIS Koop Provider](https://github.com/doneill/koop-provider-pg)
