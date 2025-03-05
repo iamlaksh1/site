@@ -1,5 +1,5 @@
 ---
-title: "Authentication using Esri ArcGIS REST JS API"
+title: "Authentication using Esri ArcGIS REST JS"
 date: "2025-03-05" 
 tags:
   - "gis"
@@ -50,16 +50,19 @@ While the Esri sample works perfectly on localhost, the challenge is how to depl
 
 3. Follow the steps in README.md to successfully to run the app in localhost.
 
-`Here let us assume API runs on http://localhost:3000  and access the API using FQDN like  https://yourcompanyname.com/esri-api`
+<br> 
+
+      `Here let us assume API runs on http://localhost:3000  and access the API using FQDN like  https://yourcompanyname.com/esri-api`
 
 4. We are going to publish this app on windows webserver (IIS) under the default site on a folder called `esri-api`. IIS (v10) should have Application Request Routing [ARR](https://www.iis.net/downloads/microsoft/application-request-routing) and [URL rewrite](https://www.iis.net/downloads/microsoft/url-rewrite).
 
+   <br>
 
-
-     ![](../images/iis.png)
+      ![](../images/iis.png)
 
     Check if ARR and Rewrite URL are available under `modules`
 
+   <br>
 
     ![](../images/iismodules.png)
 
@@ -157,7 +160,7 @@ While the Esri sample works perfectly on localhost, the challenge is how to depl
 
      ![](../images/nodejs.png)
 
-10. We can easily trace failure request . Here is document to [read] (https://learn.microsoft.com/en-us/troubleshoot/developer/webapps/iis/health-diagnostic-performance/troubleshoot-arr-using-frt-rules)
+10. We can easily trace failure request . Here is document to [read](https://learn.microsoft.com/en-us/troubleshoot/developer/webapps/iis/health-diagnostic-performance/troubleshoot-arr-using-frt-rules)
 
 11. If webserver registered with valid FQDN. You can access the app in your browser https://yourcompanyname.com/esri-api/pages should display the app like this below
 
@@ -167,9 +170,11 @@ While the Esri sample works perfectly on localhost, the challenge is how to depl
 
 `https://www.arcgis.com/sharing/rest/oauth2/authorize?client_id={client_id}&expiration=20160&response_type=code&redirect_uri=http%3A%2F%2Fyourcompanyname2Fesri-api%2Fauthenticate&state=b4fc835c5685bfe53d353ecb90ab85f262858d59`
 
-13. Upon entering user credentials ; it should authorize and authenticate and return to app page with access token and other detais
+13. Upon entering user credentials ; it should authorize and authenticate with ArcGIS and return back to app page with access token and other details as the response.
 
   ![](../images/NodejsDetails.png)
+
+  Hope this post is helpful in publishing Authenticating API on IIS webserver.
 
 ### Links
 
