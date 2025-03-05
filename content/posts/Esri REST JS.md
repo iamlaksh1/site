@@ -1,5 +1,5 @@
 ---
-title: "Authentication using Esri ArcGIS REST JS API "
+title: "Authentication using Esri ArcGIS REST JS API"
 date: "2025-03-04" 
 tags:
   - "gis"
@@ -18,12 +18,12 @@ I am currently working on a requirement for one of our custom web mapping soluti
 
 ArcGIS REST JS is a lightweight collection of JavaScript modules that allows users to access ArcGIS services and develop mapping and spatial analysis applications.
 
-Esri recommends two ways of achieveing this using Esri ArcGIS REST JS via ArcGIS Identity Manager.
+Esri recommends two ways of achieveing Authentication using Esri ArcGIS REST JS via ArcGIS Identity Manager.
 
 - ArcGISIdentityManager.beginOAuth2 and ArcGISIdentityManager.completeOAuth2 for oAuth 2.0 in browser-only environment.
 - ArcGISIdentityManager.authorize and ArcGISIdentityManager.exchangeAuthorizationCode for oAuth 2.0 for server-enabled application.
      
-There is a [sample code provided by Esri](https://github.com/Esri/arcgis-rest-js-samples/blob/main/samples/express-oauth-advanced/README.md) for implementing advanced OAuth on the server side, which includes options for refreshing tokens and handling expiration.
+Here is a [sample code provided by Esri](https://github.com/Esri/arcgis-rest-js-samples/blob/main/samples/express-oauth-advanced/README.md) for implementing advanced OAuth on the server side, which includes options for refreshing tokens and handling expiration.
 
 #### Advanced uses for Authentication Features
 
@@ -52,11 +52,14 @@ While the Esri sample works perfectly on localhost, the challenge is how to depl
 
 `Here let us assume API runs on http://localhost:3000  and access the API using FQDN like  https://yourcompanyname.com/esri-api`
 
-4. I am going to publish this app on my windows webserver (IIS) under the default website on a folder `esri-api`. IIS (v10) should have [ARR](https://www.iis.net/downloads/microsoft/application-request-routing) and [URL rewrite](https://www.iis.net/downloads/microsoft/url-rewrite).
+4. We are going to publish this app on windows webserver (IIS) under the default site on a folder called `esri-api`. IIS (v10) should have Application Request Routing [ARR](https://www.iis.net/downloads/microsoft/application-request-routing) and [URL rewrite](https://www.iis.net/downloads/microsoft/url-rewrite).
 
-    ![](../images/iis.png)
+
+
+     ![](../images/iis.png)
 
     Check if ARR and Rewrite URL are available under `modules`
+
 
     ![](../images/iismodules.png)
 
@@ -93,7 +96,7 @@ While the Esri sample works perfectly on localhost, the challenge is how to depl
     )
 ```
 
-6. And also update index.html, app.html button href with "/esri-api/{endpoint}"
+6. Update index.html, app.html button href with "/esri-api/{endpoint}"
 
 7. In your .env REDIRECT URL should be https://yourcompanyname.com/esri-api/authenticate" . This value should be added in AGS online client APP redirect URIs . Thats important.
 
@@ -150,7 +153,7 @@ While the Esri sample works perfectly on localhost, the challenge is how to depl
 ```
 
 9. The App is published under default website in virtual directory folder 'esri-api'
-   This application should run on dedicated Application pool called as Node.js
+   This application should run on dedicated Application pool called as Node.js 
 
      ![](../images/nodejs.png)
 
