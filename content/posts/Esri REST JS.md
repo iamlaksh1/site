@@ -1,6 +1,6 @@
 ---
 title: "Authentication using Esri ArcGIS REST JS API "
-date: "2025-03-05" 
+date: "2025-03-04" 
 tags:
   - "gis"
   - "Esri"
