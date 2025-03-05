@@ -6,11 +6,11 @@ menu: "main"
 weight: 1
 ---
 
-Lakshmanan is a Software Engineer who specializes in Geographical Information System (GIS). He has a strong interest in location technologies, spatial data, and cloud computing. He has extensive experience in developing cloud-native solutions using python, Javascript, and AWS. 
+I'm a Senior Geospatial Software Engineer specializing in Geographic Information Systems (GIS). My passion drives me toward location technologies, spatial data, and cloud computing. Through the years, I've built cloud-native solutions using Python, JavaScript, and AWS, while also developing proficiency with Azure and Kubernetes environments.
 
-Most of Lakshmanan's previous work has been in the Oil and Gas industry. He has led the development of enterprise-level Geospatial platforms and cloud-based solutions for various clients. He is skilled in using Esri ArcGIS Platform, Geoserver, Mapbox product suites, as well as open-source GIS tools and solutions.
+My career has largely focused on the Oil and Gas industry, where I've led teams developing enterprise geospatial platforms and cloud solutions for various clients. I've honed my skills across multiple platforms - from Esri ArcGIS and Geoserver to Mapbox and numerous open-source GIS tools. I've also accumulated significant experience with IQGeo product development and customization.
 
-Currently he is working as **Tech Lead in geospatial** in one of leading Agricultural company 
+Today, I apply this diverse technical background in my role as a Senior Geospatial Software Engineer, where I continue to explore the intersection of spatial data, cloud architecture, and innovative problem-solving.
 
 
 [Click to Connect](mailto:laksh.gisprog@gmail.com)
