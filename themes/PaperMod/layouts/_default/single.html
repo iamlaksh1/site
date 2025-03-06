@@ -7,6 +7,10 @@
       {{ .Title }}
       {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
     </h1>
+    <span id="busuanzi_container_page_pv">
+     Total page views: <span id="busuanzi_value_page_pv"></span>
+  </span>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     {{- if .Description }}
     <div class="post-description">
       {{ .Description }}
