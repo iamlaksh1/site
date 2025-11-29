@@ -106,7 +106,7 @@ In short, action and reaction forces don't cancel because they act on different 
 
 *Note 1: Newton Second Law - Only forces acting on a given body - here an box - where two forces involved - Pull force by man, and Frictional force. Sum of these forces determies acceleration*.
 
-*Note 2: Newton third Law - Relates the forces on two different bodies exert on each other ; this does not tells nothing about motion of either body*. 
+*Note 2: Newton third Law - Relates the forces on two different bodies exert on each other ; this does not tells nothing about motion of either body* 
 
 
 ![Action and Reaction DO NOT CANCEL OUT](../images/newton-laws.png)
