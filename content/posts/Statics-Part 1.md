@@ -12,7 +12,7 @@ tags:
   - "Statics"
 ---
 
-Recently, I’ve been revisiting some basic statics problems, especially those involving force resolution. In this post, I want to walk through how to construct a clear and accurate free-body diagram (FBD) when dealing with multiple forces. I’ll also include a few core principles and quick checklists that are helpful when starting out.
+Recently, I’ve been revisiting some basic statics problems, especially those involving force resolution. In this post, I will walk through types of forces, and how to construct free body diagram and solve the equations with some of key principles and guidance with figures. I also provided classic example of understanding Newtons Laws of Motion with an example. 
 
 
 <h4> Types of Forces</h4>
@@ -86,7 +86,24 @@ Example of Free body digram for Box A :
 
 5. Weigh is equal to $W = Mg$ 
 
-<h4> Another Example to understand Newtons Law of Motion  </h4>
+ <h4> Solving Equilibrium Equations </h4>
+
+  1. Break vectors into components. Compute each force’s x and y components
+  using right-triangle trigonometry.
+
+  2. Write equilibrium equations. Now represent your free-body diagram as two
+  equilibrium equations, ΣFx = 0 and ΣFy = 0.
+  3. Count knowns and unknowns. At this point, you should have at most two
+  unknown values. If you have more than two, reread the problem and look
+  for overlooked information.
+  4. Solve for unknowns. Use algebra to simplify the equilibrium equations
+  and solve for unknowns. All answers in Statics will have units - unless you
+  have solved for a dimensionless value, like a friction coefficient. 
+  5. Check your work. If you add the components of the forces, do they add
+  to zero?  Do the results seem reasonable given the situation? Have you
+included appropriate units?
+
+<h4> Example to understand Newtons Law of Motions  </h4>
 
 ![Action and Reaction DO NOT CANCEL OUT](../images/force-man.png)
 
