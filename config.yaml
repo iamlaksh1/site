@@ -16,6 +16,7 @@ params:
   defaultTheme: auto
   ShowReadingTime: true
   ShowCodeCopyButtons: true
+  math: true
 
   homeInfoParams:
     FirstParagraph: >
