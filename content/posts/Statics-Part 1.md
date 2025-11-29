@@ -12,10 +12,6 @@ tags:
   - "Statics"
 ---
 
-
-<h1> Engineering Mechanics - Statics </h1>
-
-
 Recently, I’ve been revisiting some basic statics problems, especially those involving force resolution. In this post, I want to walk through how to construct a clear and accurate free-body diagram (FBD) when dealing with multiple forces. I’ll also include a few core principles and quick checklists that are helpful when starting out.
 
 
@@ -53,7 +49,7 @@ Example of Free body digram for Box A :
   ![FBD of Box Pulley](../images/fbd-pulley.png)
 
 
-2. Set up a coordinate system –This super important how to set-up a coordinate system. Does the coordimnate system (x-y plane) parallel to line of action or surface? How to choose the clockwise direction as  positive or anti-clockwise direction as negative direction of forces? 
+2. Set up a coordinate system –This super important how to set-up a coordinate system. Does the coordimnate system (x-y plane) parallel to line of action or surface? Or clockwise direction as  positive or anti-clockwise direction as negative direction of forces? 
 
       ![Coordinate Systen](../images/coordinate-system.png)
 
@@ -72,21 +68,19 @@ Example of Free body digram for Box A :
       ![Forces on large weight ](../images/large-weight.png)
 
 
-4. Determine support reactions – These forces come from the supports you removed when isolating the body. Particle supports act as two-force members, producing either tension or compression. Label each reaction with a descriptive variable name and an arrow showing its direction.
-
-
+4. Determine support reactions – These forces come from the supports you removed when isolating the body. Particle supports act as two-force members, producing either tension or compression.
 
 5. Label everything clearly – Make sure every force on your diagram has either a numerical value or a symbolic variable if the exact value is unknown. The completed free-body diagram should be neat, fully labeled, and ready for analysis.
 
 
 
-<h4> </h4>
+<h4> Few Points </h4>
 
 1. Does magntidue to force is negative then vector is opposite direction 
 
 2. Tension on any string /cable/ pulley are Tensile force 
 
-3. Frictionless pullley or rope is massles or rope is inline with mass center 
+3. Frictionless pulley or rope is massles or rope is inline with mass center 
 
 4. System is  in Equilibrium.  $\sum F_x = 0$ and $\sum F_y = 0$
 
