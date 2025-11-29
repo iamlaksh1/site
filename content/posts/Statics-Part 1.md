@@ -47,7 +47,8 @@ Example of Free body digram for Box A :
 
   ![FBD of Box A](../images/fbd-box.png)
   ![FBD of Box Pulley](../images/fbd-pulley.png)
-
+      ![Forces on small weight ](../images/small-weight.png)
+      ![Forces on large weight ](../images/large-weight.png)
 
 2. Set up a coordinate system –This super important how to set-up a coordinate system. Does the coordimnate system (x-y plane) parallel to line of action or surface? Or clockwise direction as  positive or anti-clockwise direction as negative direction of forces? 
 
@@ -64,8 +65,7 @@ Example of Free body digram for Box A :
     - *Forces the mass is impression on other masses this should be ignored*.
 
       ![Internal Force](../images/internal-force.png)
-      ![Forces on small weight ](../images/small-weight.png)
-      ![Forces on large weight ](../images/large-weight.png)
+  
 
 
 4. Determine support reactions – These forces come from the supports you removed when isolating the body. Particle supports act as two-force members, producing either tension or compression.
