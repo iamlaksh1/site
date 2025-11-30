@@ -14,7 +14,7 @@ tags:
 
 As part of Engineering Mechanics Series. Here is first problem we are going to solve. In case if you need some basics , Please [visit this post](https://iamlaksh1.github.io/site/engineering-mechanics-statics/)  as quick review
 
-<h3> Here is an given problem statement </h3>
+<h3> Here is an given problem </h3>
 
 ![Problem 1](../images/problem-1.png)
 
@@ -27,8 +27,7 @@ As part of Engineering Mechanics Series. Here is first problem we are going to s
 
 1. Block is in equilibrium - i.e. block is at rest or moving at constant velocity 
 2. Frictionless surface - there is no frictional force involved. 
-3. Mass of weight act downwards (always vertical)
-4. Weight is different from Mass.  $W = Mg$ 
+
 
 <h4> Given data</h4>
 
@@ -84,6 +83,9 @@ As part of Engineering Mechanics Series. Here is first problem we are going to s
       **Normal Force** ($N$):
       - $N_x = 0$
       - $N_y = +N$ (Points away from the slope)
+
+      ![Problem 1](../images/problem-1.2.png)
+      
   5. Equilibrium Equations
 
       Since the block is resting, the sum of forces in both directions must be zero.

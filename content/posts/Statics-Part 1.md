@@ -53,6 +53,7 @@ Example of Free body digram for Box A :
 2. Set up a coordinate system –This super important how to set-up a coordinate system. Does the coordimnate system (x-y plane) parallel to line of action or surface? Or clockwise direction as  positive or anti-clockwise direction as negative direction of forces? 
 
       ![Coordinate Systen](../images/coordinate-system.png)
+      ![Coordinate Systen](../images/coordinate-system-1.png)
 
 3. Identify all applied loads – Show all forces acting on the body, including pushes, pulls, and the body’s weight if it’s significant. Each force should have a variable name and a clearly drawn arrow indicating its direction. 
 
